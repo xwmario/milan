@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MaptimeMilan</title>
-    <meta name="author" content="original theme by Peter Finlan and Taty Grassini Codrops" />
+    <title>Alankrit</title>
+    <meta name="author" content="Nerd Solutions.InC" />
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
@@ -26,6 +26,9 @@
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="css/landio.css">
+    <script src="https://use.fontawesome.com/00e6bc3b08.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
   </head>
 
   <body>
@@ -37,16 +40,26 @@
 
     <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="container">
-        <img src="img/maptimemiLogo.png" height="90" width="90" alt="Avatar" class="img-circle logo-img">
+        <img src="img/alankrit.jpg" height="90" width="90" alt="Avatar" class="img-circle logo-img">
 
-        <h3 class="display-3">Maptime Milan</h3>
+        <h3 class="display-3"><span class="type-it"></span></h3>
+        <script>
+          $('.type-it').typeIt({
+     strings: ['Alankrit']
+          });
+        </script>
 
-        <h5 class="m-b-3">Un luogo per imparare a mappare all'ombra della Madonnina <br> <em>A place for learning and hacking on maps in Milan, Italy</em></h5>
-
+        <h5 class="m-b-3"><span class="typo"></span></h5>
+          <script>
+          $('.typo').typeIt({
+     strings: ['HVAC Engineer, Freelance web developer ​and a Gamer!']
+          });
+        </script>
         <ul class="nav nav-inline social-share">
-          <li class="nav-item"><a class="nav-link" href="https://twitter.com/MaptimeMI"><span class="fa fa-twitter"></span> </a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/maptimemi"><span class="fa fa-facebook"></span></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/maptime/milan"><span class="fa fa-github"></span></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://twitter.com/senpaimass"><span class="fa fa-twitter"></span> </a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/alankrit.jais"><span class="fa fa-facebook"></span></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/xwmario"><span class="fa fa-github"></span></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://steamcommunity.com/id/senpaimass/"><i class="fa fa-steam-square" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </header>
