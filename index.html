@@ -27,8 +27,8 @@
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="css/landio.css">
     <script src="https://use.fontawesome.com/00e6bc3b08.js"></script>
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 
   </head>
 
@@ -41,21 +41,23 @@
 
     <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="container">
-        <img src="img/alankrit.jpg" height="90" width="90" alt="Avatar" class="img-circle logo-img">
-  <script>
+        <img src="img/alankrit.jpg" height="120" width="120" alt="Avatar" class="img-circle logo-img">
         <h3 class="display-3">Alankrit</h3>
-  
-    $('#display-3').typeIt({
-           speed: 50
-     autoStart: false
-});
-
-        <h5 class="m-b-3">HVAC Engineer, Freelance web developer ​and a Gamer!</h5>
-  
-    $('#m-b-3').typeIt({
-          speed: 50
-     autoStart: false
-});</script>
+        <script>
+    $(function(){
+        $("#typed").typed({
+            stringsElement: $('#display-3')
+        });
+    });
+</script>
+          <h5 class="m-b-3">HVAC Engineer, Freelance web developer ​and a Gamer!</h5>
+        <script>
+    $(function(){
+        $("#typed").typed({
+            stringsElement: $('#m-b-3')
+        });
+    });
+</script>
         <ul class="nav nav-inline social-share">
           <li class="nav-item"><a class="nav-link" href="https://twitter.com/senpaimass"><span class="fa fa-twitter"></span> </a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/alankrit.jais"><span class="fa fa-facebook"></span></a></li>
