@@ -27,7 +27,16 @@
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="css/landio.css">
     <script src="https://use.fontawesome.com/00e6bc3b08.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+    <script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Alankrit"],
+            typeSpeed: 100
+        });
+    });
+</script>
   </head>
 
   <body>
@@ -40,7 +49,7 @@
     <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="container">
         <img src="img/alankrit.jpg" height="120" width="120" alt="Avatar" class="img-circle logo-img">
-        <h3 class="display-3"><div class='element0'>Alankrit</div></h3>
+        <h3 class="display-3"><span class="element"></span></h3>
 
           <h5 class="m-b-3">HVAC Engineer, Freelance web developer ​and a Gamer!</h5>
 
@@ -52,7 +61,5 @@
         </ul>
       </div>
     </header>
-
-
 
 </html>
