@@ -29,6 +29,7 @@
     <script src="https://use.fontawesome.com/00e6bc3b08.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+
   </head>
 
   <body>
@@ -42,11 +43,21 @@
       <div class="container">
         <img src="img/alankrit.jpg" height="90" width="90" alt="Avatar" class="img-circle logo-img">
 
-        <h3 class="display-3"><span class="type-it">Alankrit</span></h3>
+        <h3 class="display-3"></h3>
+    <script>
+    $('#display-3').typeIt({
+           strings: 'Alankrit',
+          speed: 50
+     autoStart: false
+});</script>
 
-
-        <h5 class="m-b-3"><span class="typo">HVAC Engineer, Freelance web developer ​and a Gamer!</span></h5>
-
+        <h5 class="m-b-3"></h5>
+    <script>
+    $('#m-b-3').typeIt({
+           strings: 'HVAC Engineer, Freelance web developer ​and a Gamer!,
+          speed: 50
+     autoStart: false
+});</script>
         <ul class="nav nav-inline social-share">
           <li class="nav-item"><a class="nav-link" href="https://twitter.com/senpaimass"><span class="fa fa-twitter"></span> </a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/alankrit.jais"><span class="fa fa-facebook"></span></a></li>
