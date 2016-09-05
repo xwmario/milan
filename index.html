@@ -28,14 +28,34 @@
     <link rel="stylesheet" href="css/landio.css">
     <script src="https://use.fontawesome.com/00e6bc3b08.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
     <script>
     $(function(){
-        $(".element").typed({
-            strings: ["Alankrit"],
-            typeSpeed: 100
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#elememt'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
         });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
     });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
 </script>
   </head>
 
@@ -49,8 +69,8 @@
     <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="container">
         <img src="img/alankrit.jpg" height="120" width="120" alt="Avatar" class="img-circle logo-img">
-        <h3 class="display-3"><span class="element"></span></h3>
-
+        <h3 class="display-3"><span id="element"></span></h3>
+          <span id="typed" style="white-space:pre;"></span>
           <h5 class="m-b-3">HVAC Engineer, Freelance web developer ​and a Gamer!</h5>
 
         <ul class="nav nav-inline social-share">
