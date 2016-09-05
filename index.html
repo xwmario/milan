@@ -41,8 +41,8 @@
     <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="container">
         <img src="img/alankrit.jpg" height="120" width="120" alt="Avatar" class="img-circle logo-img">
-         <h3 class="display-3">Alankrit </h3>
-          <h5 class="m-b-3">HVAC Engineer, Freelance web developer ​and a Gamer!</h5>
+         <h3 class="display-3" id="header"></h3>
+          <h5 class="m-b-3" id="subheader"></h5>
 
         <ul class="nav nav-inline social-share">
           <li class="nav-item"><a class="nav-link" href="https://twitter.com/senpaimass"><span class="fa fa-twitter"></span> </a></li>
@@ -52,5 +52,24 @@
         </ul>
       </div>
     </header>
-
+  <script>
+    function writenext() {
+      $('#subheader').typeIt({
+        speed: 75,
+        startDelay: 1250,
+        autoStart: false,
+        strings: 'HVAC Engineer, Freelance web developer ​and a Gamer!'
+      }
+    }
+    
+    window.onload = $('#header').typeIt({
+      speed: 50,
+      startDelay: 750,
+      autoStart: true,
+      strings: 'Alankrit',
+      callback(): function() {
+        writenext();
+      }
+    });
+  </script>
 </html>
