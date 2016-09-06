@@ -4438,7 +4438,34 @@ body {
   .jumbotron a.jumbolink:hover,
   .jumbotron a.jumbolink:focus {
     opacity: 1; }
+/* New CSS inputs9*/
+.jumboron {
+  height: 100%;
+  padding-top: 7rem;
+  margin-bottom: 0;
+  background: #202020; 
+  background-size: cover;
+  border-radius: 0; }
+  @media (max-width: 767px) {
+    .jumboron {
+      padding-top: 6.25rem; } }
+  .jumboron .btn {
+    padding: 1.05rem 2rem 1.35rem; }
+  .jumboron a.jumbolink {
+    opacity: .6;
+    transition: opacity .175s; }
+  .jumboron a.jumbolink:hover,
+  .jumboron a.jumbolink:focus {
+    opacity: 1; }
+    /*         New Page Margins and text     */
+  .display-9 {
+    font-size: 3rem;
+    font-weight: 500;
+    top: 5px;
+    left: 50%;
+}
 
+/* ---------------------------------------*/
 .carousel-header,
 .carousel-inner,
 .carousel-item {

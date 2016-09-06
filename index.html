@@ -29,30 +29,52 @@
     <script src="https://use.fontawesome.com/00e6bc3b08.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
-  </head>
+</head>
 
   <body>
-
-
 
     <!-- Hero Section
     ================================================== -->
 
-    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
-      <div class="container">
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" id="top">
+      <div class="container text-xs-center center-vertically">
         <img src="img/alankrit.jpg" height="120" width="120" alt="Avatar" class="img-circle logo-img">
          <h3 class="display-3" id="header"></h3>
-          <h5 class="m-b-3" id="subheader"></h5>
-
+          <h5 class="m-b-3" id="subheader"></h5> <br/><br/><br/><br/>
+          
         <ul class="nav nav-inline social-share">
           <li class="nav-item"><a class="nav-link" href="https://twitter.com/senpaimass"  target="_blank"><span class="fa fa-twitter"></span> </a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/alankrit.jais"  target="_blank"><span class="fa fa-facebook"></span></a></li>
           <li class="nav-item"><a class="nav-link" href="https://github.com/xwmario"  target="_blank"><span class="fa fa-github"></span></a></li>
           <li class="nav-item"><a class="nav-link" href="https://steamcommunity.com/id/senpaimass/"  target="_blank"><span class="fa fa-steam-square"></span></a></li>
-          <li class="nav-item"><a class="nav-link" href="mailto:hi@alankr.it?Subject=Hello%20Alankrit"  target="_top"><span class="fa fa-envelope"></span></a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:hi@alankr.it?Subject=Hello%20Alankrit"  target="_top"><span class="fa fa-envelope"></span></a></li><br/><br/><br/>
+          <a href="javascript:;" id="scrollToBottom"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
         </ul>
+        
       </div>
+
     </header>
+<!-- Projects Done -->
+<header class="jumboron bg-inverse" role="banner" id="page2">
+<div class="container text-xs-center">
+    <h3 class="display-9">About Me</h3>
+    <h5 class="m-b-3">Hello, Welcome to my portfolio. From the age of 15 i had a strong affinity towards computers, and at the young age of 16 I learnt my first computer program C++ and from there on the journey began!</h5>
+</div>
+<div></div><br/>
+<div class="container">
+    <h3 class="display-9">Thing I did!</h3>
+    <h5 class="m-b-3">Open Source Github Contributions to several projects such as Node-BB, Discourse.org, anirecs etc. <br/>Server Management and Mail management of HVAC-SYSTEMS<br/>Design of Several Opensource Discourse based communities. <br/><br/>Few of my work Below.</h5>
+    
+    <h5 class="m-x-auto"><a href="https://alankr.it">1. Alankrit</a></h5><br/>
+    <h5 class="m-x-auto"><a href="https://discuss.moe">1. Discuss.Moe</a></h5><br/>
+    <h5 class="m-x-auto"><a href="https://blog.discuss.moe">2. Blog</a></h5><br/>
+
+    <br/><br/><br/><div class="container text-xs-center center-vertically">
+  <a href="javascript:;" id="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+    </div>
+</header>
+
+<!--Load JS here -->
   <script>
     "use strict";
     
@@ -75,4 +97,17 @@
       }
     });
   </script>
+  <!-- Scroll Function -->
+    <script>
+        $(function () {
+            $('#scrollToBottom').bind("click", function () {
+                $('html, body').animate({ scrollTop: $(document).height() }, 3300);
+                return false;
+            });
+            $('#scrollToTop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0 }, 3300);
+                return false;
+            });
+        });
+    </script>
 </html>
