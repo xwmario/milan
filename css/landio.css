@@ -4440,7 +4440,7 @@ body {
     opacity: 1; }
 /* New CSS inputs9*/
 .jumboron {
-  height: auto;
+  height: inherit;
   padding-top: 7rem;
   margin-bottom: 0;
   background: #202020; 
@@ -4604,6 +4604,16 @@ h2 {
     padding: .1875rem .7rem; }
   .social-share li + li {
     border-left: 1px solid rgba(255, 255, 255, 0.25); }
+
+    /* Top SCROLL BOX */
+.top-scroll {
+  margin-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: .8125rem;
+  font-weight: 700;
+  line-height: 1.23;
+  text-align: center; }
+  
 
 h3 {
   margin-bottom: 1.25rem;
