@@ -4440,7 +4440,7 @@ body {
     opacity: 1; }
 /* New CSS inputs9*/
 .jumboron {
-  height: inherit;
+  height: auto;
   padding-top: 7rem;
   margin-bottom: 0;
   background: #202020; 
